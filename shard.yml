@@ -1,7 +1,8 @@
 name: rocksdb
-version: 0.5.1
+version: 0.5.2
 
 authors:
   - maiha <maiha@wota.jp>
+  - lribeiro <ribeiro.luis@gmail.com>
 
 license: MIT

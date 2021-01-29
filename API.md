@@ -1,12 +1,12 @@
 # Supported API
-## Implemented 38% (101/259)
-### Database (3 / 24)
+## Implemented 0% (0/259)
+### Database (0 / 24)
 
 |Command                                              |impl|test|note|
 |-----------------------------------------------------|:--:|:--:|----|
-|`rocksdb_open`                                       |  ✓ |  ✓ |    |
-|`rocksdb_close`                                      |  ✓ |  ✓ |    |
-|`rocksdb_open_for_read_only`                         |  ✓ |  ✓ |    |
+|`rocksdb_open`                                       |    |  ✓ |    |
+|`rocksdb_close`                                      |    |  ✓ |    |
+|`rocksdb_open_for_read_only`                         |    |  ✓ |    |
 |`rocksdb_backup_engine_open`                         |    |    |    |
 |`rocksdb_backup_engine_create_new_backup`            |    |    |    |
 |`rocksdb_restore_options_create`                     |    |    |    |
@@ -29,39 +29,39 @@
 |`rocksdb_drop_column_family`                         |    |    |    |
 |`rocksdb_column_family_handle_destroy`               |    |    |    |
 
-### Reads and writes (5 / 13)
+### Reads and writes (0 / 13)
 
 |Command               |impl|test|note|
 |----------------------|:--:|:--:|----|
-|`rocksdb_get`         |  ✓ |  ✓ |    |
-|`rocksdb_put`         |  ✓ |  ✓ |    |
-|`rocksdb_delete`      |  ✓ |  ✓ |    |
+|`rocksdb_get`         |    |  ✓ |    |
+|`rocksdb_put`         |    |  ✓ |    |
+|`rocksdb_delete`      |    |  ✓ |    |
 |`rocksdb_put_cf`      |    |    |    |
-|`rocksdb_delete`      |  ✓ |  ✓ |    |
+|`rocksdb_delete`      |    |  ✓ |    |
 |`rocksdb_delete_cf`   |    |    |    |
 |`rocksdb_merge`       |    |    |    |
 |`rocksdb_merge_cf`    |    |    |    |
 |`rocksdb_write`       |    |    |    |
-|`rocksdb_get`         |  ✓ |  ✓ |    |
+|`rocksdb_get`         |    |  ✓ |    |
 |`rocksdb_get_cf`      |    |    |    |
 |`rocksdb_multi_get`   |    |    |    |
 |`rocksdb_multi_get_cf`|    |    |    |
 
-### Iteration (10 / 12)
+### Iteration (0 / 12)
 
 |Command                     |impl|test|note|
 |----------------------------|:--:|:--:|----|
-|`rocksdb_create_iterator`   |  ✓ |  ✓ |    |
+|`rocksdb_create_iterator`   |    |  ✓ |    |
 |`rocksdb_create_iterator_cf`|    |    |    |
-|`rocksdb_iter_destroy`      |  ✓ |  ✓ |    |
-|`rocksdb_iter_valid`        |  ✓ |  ✓ |    |
-|`rocksdb_iter_seek_to_first`|  ✓ |  ✓ |    |
-|`rocksdb_iter_seek_to_last` |  ✓ |  ✓ |    |
-|`rocksdb_iter_seek`         |  ✓ |  ✓ |    |
-|`rocksdb_iter_next`         |  ✓ |  ✓ |    |
-|`rocksdb_iter_prev`         |  ✓ |  ✓ |    |
-|`rocksdb_iter_key`          |  ✓ |  ✓ |    |
-|`rocksdb_iter_value`        |  ✓ |  ✓ |    |
+|`rocksdb_iter_destroy`      |    |  ✓ |    |
+|`rocksdb_iter_valid`        |    |  ✓ |    |
+|`rocksdb_iter_seek_to_first`|    |  ✓ |    |
+|`rocksdb_iter_seek_to_last` |    |  ✓ |    |
+|`rocksdb_iter_seek`         |    |  ✓ |    |
+|`rocksdb_iter_next`         |    |  ✓ |    |
+|`rocksdb_iter_prev`         |    |  ✓ |    |
+|`rocksdb_iter_key`          |    |  ✓ |    |
+|`rocksdb_iter_value`        |    |  ✓ |    |
 |`rocksdb_iter_get_error`    |    |    |    |
 
 ### Snapshots (0 / 15)
@@ -141,126 +141,126 @@
 |`rocksdb_cuckoo_options_set_use_module_hash`       |    |    |    |
 |`rocksdb_options_set_cuckoo_table_factory`         |    |    |    |
 
-### Options (75 / 94)
+### Options (0 / 94)
 
 |Command                                                        |impl|test|note|
 |---------------------------------------------------------------|:--:|:--:|----|
-|`rocksdb_options_create`                                       |  ✓ |    |    |
-|`rocksdb_options_destroy`                                      |  ✓ |    |    |
-|`rocksdb_options_increase_parallelism`                         |  ✓ |    |    |
-|`rocksdb_options_optimize_for_point_lookup`                    |  ✓ |    |    |
-|`rocksdb_options_optimize_level_style_compaction`              |  ✓ |    |    |
-|`rocksdb_options_optimize_universal_style_compaction`          |  ✓ |    |    |
+|`rocksdb_options_create`                                       |    |    |    |
+|`rocksdb_options_destroy`                                      |    |    |    |
+|`rocksdb_options_increase_parallelism`                         |    |    |    |
+|`rocksdb_options_optimize_for_point_lookup`                    |    |    |    |
+|`rocksdb_options_optimize_level_style_compaction`              |    |    |    |
+|`rocksdb_options_optimize_universal_style_compaction`          |    |    |    |
 |`rocksdb_options_set_compaction_filter`                        |    |    |    |
 |`rocksdb_options_set_compaction_filter_factory`                |    |    |    |
 |`rocksdb_options_set_comparator`                               |    |    |    |
 |`rocksdb_options_set_merge_operator`                           |    |    |    |
 |`rocksdb_options_set_uint64add_merge_operator`                 |    |    |    |
 |`rocksdb_options_set_compression_per_level`                    |    |    |    |
-|`rocksdb_options_set_create_if_missing`                        |  ✓ |  ✓ |    |
-|`rocksdb_options_set_create_missing_column_families`           |  ✓ |    |    |
-|`rocksdb_options_set_error_if_exists`                          |  ✓ |    |    |
-|`rocksdb_options_set_paranoid_checks`                          |  ✓ |    |    |
+|`rocksdb_options_set_create_if_missing`                        |    |  ✓ |    |
+|`rocksdb_options_set_create_missing_column_families`           |    |    |    |
+|`rocksdb_options_set_error_if_exists`                          |    |    |    |
+|`rocksdb_options_set_paranoid_checks`                          |    |    |    |
 |`rocksdb_options_set_env`                                      |    |    |    |
 |`rocksdb_options_set_info_log`                                 |    |    |    |
-|`rocksdb_options_set_info_log_level`                           |  ✓ |    |    |
-|`rocksdb_options_set_write_buffer_size`                        |  ✓ |    |    |
-|`rocksdb_options_set_max_open_files`                           |  ✓ |    |    |
-|`rocksdb_options_set_max_total_wal_size`                       |  ✓ |    |    |
+|`rocksdb_options_set_info_log_level`                           |    |    |    |
+|`rocksdb_options_set_write_buffer_size`                        |    |    |    |
+|`rocksdb_options_set_max_open_files`                           |    |    |    |
+|`rocksdb_options_set_max_total_wal_size`                       |    |    |    |
 |`rocksdb_options_set_compression_options`                      |    |    |    |
 |`rocksdb_options_set_prefix_extractor`                         |    |    |    |
-|`rocksdb_options_set_num_levels`                               |  ✓ |    |    |
-|`rocksdb_options_set_level0_file_num_compaction_trigger`       |  ✓ |    |    |
-|`rocksdb_options_set_level0_slowdown_writes_trigger`           |  ✓ |    |    |
+|`rocksdb_options_set_num_levels`                               |    |    |    |
+|`rocksdb_options_set_level0_file_num_compaction_trigger`       |    |    |    |
+|`rocksdb_options_set_level0_slowdown_writes_trigger`           |    |    |    |
 |`rocksdb_options_set_level0_stop_writes_trigger`               |    |    |    |
-|`rocksdb_options_set_max_mem_compaction_level`                 |  ✓ |    |    |
-|`rocksdb_options_set_target_file_size_base`                    |  ✓ |    |    |
-|`rocksdb_options_set_target_file_size_multiplier`              |  ✓ |    |    |
-|`rocksdb_options_set_max_bytes_for_level_base`                 |  ✓ |    |    |
-|`rocksdb_options_set_max_bytes_for_level_multiplier`           |  ✓ |    |    |
-|`rocksdb_options_set_expanded_compaction_factor`               |  ✓ |    |    |
-|`rocksdb_options_set_max_grandparent_overlap_factor`           |  ✓ |    |    |
+|`rocksdb_options_set_max_mem_compaction_level`                 |    |    |    |
+|`rocksdb_options_set_target_file_size_base`                    |    |    |    |
+|`rocksdb_options_set_target_file_size_multiplier`              |    |    |    |
+|`rocksdb_options_set_max_bytes_for_level_base`                 |    |    |    |
+|`rocksdb_options_set_max_bytes_for_level_multiplier`           |    |    |    |
+|`rocksdb_options_set_expanded_compaction_factor`               |    |    |    |
+|`rocksdb_options_set_max_grandparent_overlap_factor`           |    |    |    |
 |`rocksdb_options_set_max_bytes_for_level_multiplier_additional`|    |    |    |
-|`rocksdb_options_enable_statistics`                            |  ✓ |    |    |
+|`rocksdb_options_enable_statistics`                            |    |    |    |
 |`rocksdb_options_statistics_get_string`                        |    |    |    |
-|`rocksdb_options_set_max_write_buffer_number`                  |  ✓ |    |    |
-|`rocksdb_options_set_min_write_buffer_number_to_merge`         |  ✓ |    |    |
-|`rocksdb_options_set_max_write_buffer_number_to_maintain`      |  ✓ |    |    |
-|`rocksdb_options_set_max_background_compactions`               |  ✓ |    |    |
-|`rocksdb_options_set_max_background_flushes`                   |  ✓ |    |    |
-|`rocksdb_options_set_max_log_file_size`                        |  ✓ |    |    |
-|`rocksdb_options_set_log_file_time_to_roll`                    |  ✓ |    |    |
-|`rocksdb_options_set_keep_log_file_num`                        |  ✓ |    |    |
-|`rocksdb_options_set_soft_rate_limit`                          |  ✓ |    |    |
-|`rocksdb_options_set_hard_rate_limit`                          |  ✓ |    |    |
-|`rocksdb_options_set_rate_limit_delay_max_milliseconds`        |  ✓ |    |    |
-|`rocksdb_options_set_max_manifest_file_size`                   |  ✓ |    |    |
-|`rocksdb_options_set_table_cache_numshardbits`                 |  ✓ |    |    |
-|`rocksdb_options_set_table_cache_remove_scan_count_limit`      |  ✓ |    |    |
-|`rocksdb_options_set_arena_block_size`                         |  ✓ |    |    |
-|`rocksdb_options_set_use_fsync`                                |  ✓ |    |    |
+|`rocksdb_options_set_max_write_buffer_number`                  |    |    |    |
+|`rocksdb_options_set_min_write_buffer_number_to_merge`         |    |    |    |
+|`rocksdb_options_set_max_write_buffer_number_to_maintain`      |    |    |    |
+|`rocksdb_options_set_max_background_compactions`               |    |    |    |
+|`rocksdb_options_set_max_background_flushes`                   |    |    |    |
+|`rocksdb_options_set_max_log_file_size`                        |    |    |    |
+|`rocksdb_options_set_log_file_time_to_roll`                    |    |    |    |
+|`rocksdb_options_set_keep_log_file_num`                        |    |    |    |
+|`rocksdb_options_set_soft_rate_limit`                          |    |    |    |
+|`rocksdb_options_set_hard_rate_limit`                          |    |    |    |
+|`rocksdb_options_set_rate_limit_delay_max_milliseconds`        |    |    |    |
+|`rocksdb_options_set_max_manifest_file_size`                   |    |    |    |
+|`rocksdb_options_set_table_cache_numshardbits`                 |    |    |    |
+|`rocksdb_options_set_table_cache_remove_scan_count_limit`      |    |    |    |
+|`rocksdb_options_set_arena_block_size`                         |    |    |    |
+|`rocksdb_options_set_use_fsync`                                |    |    |    |
 |`rocksdb_options_set_db_log_dir`                               |    |    |    |
 |`rocksdb_options_set_wal_dir`                                  |    |    |    |
-|`rocksdb_options_set_wal_ttl_seconds`                          |  ✓ |    |    |
-|`rocksdb_options_set_wal_size_limit_mb`                        |  ✓ |    |    |
-|`rocksdb_options_set_manifest_preallocation_size`              |  ✓ |    |    |
-|`rocksdb_options_set_purge_redundant_kvs_while_flush`          |  ✓ |    |    |
-|`rocksdb_options_set_allow_os_buffer`                          |  ✓ |    |    |
-|`rocksdb_options_set_allow_mmap_reads`                         |  ✓ |    |    |
-|`rocksdb_options_set_allow_mmap_writes`                        |  ✓ |    |    |
-|`rocksdb_options_set_is_fd_close_on_exec`                      |  ✓ |    |    |
-|`rocksdb_options_set_skip_log_error_on_recovery`               |  ✓ |    |    |
-|`rocksdb_options_set_stats_dump_period_sec`                    |  ✓ |    |    |
-|`rocksdb_options_set_advise_random_on_open`                    |  ✓ |    |    |
-|`rocksdb_options_set_access_hint_on_compaction_start`          |  ✓ |    |    |
-|`rocksdb_options_set_use_adaptive_mutex`                       |  ✓ |    |    |
-|`rocksdb_options_set_bytes_per_sync`                           |  ✓ |    |    |
-|`rocksdb_options_set_verify_checksums_in_compaction`           |  ✓ |    |    |
-|`rocksdb_options_set_filter_deletes`                           |  ✓ |    |    |
-|`rocksdb_options_set_max_sequential_skip_in_iterations`        |  ✓ |    |    |
-|`rocksdb_options_set_disable_data_sync`                        |  ✓ |    |    |
-|`rocksdb_options_set_disable_auto_compactions`                 |  ✓ |    |    |
-|`rocksdb_options_set_delete_obsolete_files_period_micros`      |  ✓ |    |    |
-|`rocksdb_options_set_source_compaction_factor`                 |  ✓ |    |    |
-|`rocksdb_options_prepare_for_bulk_load`                        |  ✓ |    |    |
-|`rocksdb_options_set_memtable_vector_rep`                      |  ✓ |    |    |
-|`rocksdb_options_set_hash_skip_list_rep`                       |  ✓ |    |    |
-|`rocksdb_options_set_hash_link_list_rep`                       |  ✓ |    |    |
-|`rocksdb_options_set_plain_table_factory`                      |  ✓ |    |    |
-|`rocksdb_options_set_min_level_to_compress`                    |  ✓ |    |    |
-|`rocksdb_options_set_memtable_prefix_bloom_bits`               |  ✓ |    |    |
-|`rocksdb_options_set_memtable_prefix_bloom_probes`             |  ✓ |    |    |
-|`rocksdb_options_set_max_successive_merges`                    |  ✓ |    |    |
-|`rocksdb_options_set_min_partial_merge_operands`               |  ✓ |    |    |
-|`rocksdb_options_set_bloom_locality`                           |  ✓ |    |    |
-|`rocksdb_options_set_inplace_update_support`                   |  ✓ |    |    |
-|`rocksdb_options_set_inplace_update_num_locks`                 |  ✓ |    |    |
+|`rocksdb_options_set_wal_ttl_seconds`                          |    |    |    |
+|`rocksdb_options_set_wal_size_limit_mb`                        |    |    |    |
+|`rocksdb_options_set_manifest_preallocation_size`              |    |    |    |
+|`rocksdb_options_set_purge_redundant_kvs_while_flush`          |    |    |    |
+|`rocksdb_options_set_allow_os_buffer`                          |    |    |    |
+|`rocksdb_options_set_allow_mmap_reads`                         |    |    |    |
+|`rocksdb_options_set_allow_mmap_writes`                        |    |    |    |
+|`rocksdb_options_set_is_fd_close_on_exec`                      |    |    |    |
+|`rocksdb_options_set_skip_log_error_on_recovery`               |    |    |    |
+|`rocksdb_options_set_stats_dump_period_sec`                    |    |    |    |
+|`rocksdb_options_set_advise_random_on_open`                    |    |    |    |
+|`rocksdb_options_set_access_hint_on_compaction_start`          |    |    |    |
+|`rocksdb_options_set_use_adaptive_mutex`                       |    |    |    |
+|`rocksdb_options_set_bytes_per_sync`                           |    |    |    |
+|`rocksdb_options_set_verify_checksums_in_compaction`           |    |    |    |
+|`rocksdb_options_set_filter_deletes`                           |    |    |    |
+|`rocksdb_options_set_max_sequential_skip_in_iterations`        |    |    |    |
+|`rocksdb_options_set_disable_data_sync`                        |    |    |    |
+|`rocksdb_options_set_disable_auto_compactions`                 |    |    |    |
+|`rocksdb_options_set_delete_obsolete_files_period_micros`      |    |    |    |
+|`rocksdb_options_set_source_compaction_factor`                 |    |    |    |
+|`rocksdb_options_prepare_for_bulk_load`                        |    |    |    |
+|`rocksdb_options_set_memtable_vector_rep`                      |    |    |    |
+|`rocksdb_options_set_hash_skip_list_rep`                       |    |    |    |
+|`rocksdb_options_set_hash_link_list_rep`                       |    |    |    |
+|`rocksdb_options_set_plain_table_factory`                      |    |    |    |
+|`rocksdb_options_set_min_level_to_compress`                    |    |    |    |
+|`rocksdb_options_set_memtable_prefix_bloom_bits`               |    |    |    |
+|`rocksdb_options_set_memtable_prefix_bloom_probes`             |    |    |    |
+|`rocksdb_options_set_max_successive_merges`                    |    |    |    |
+|`rocksdb_options_set_min_partial_merge_operands`               |    |    |    |
+|`rocksdb_options_set_bloom_locality`                           |    |    |    |
+|`rocksdb_options_set_inplace_update_support`                   |    |    |    |
+|`rocksdb_options_set_inplace_update_num_locks`                 |    |    |    |
 |`rocksdb_options_set_compression`                              |    |    |    |
 |`rocksdb_options_set_compaction_style`                         |    |    |    |
 |`rocksdb_options_set_universal_compaction_options`             |    |    |    |
 |`rocksdb_options_set_fifo_compaction_options`                  |    |    |    |
 
-### Read options (6 / 8)
+### Read options (0 / 8)
 
 |Command                                      |impl|test|note|
 |---------------------------------------------|:--:|:--:|----|
-|`rocksdb_readoptions_create`                 |  ✓ |    |    |
-|`rocksdb_readoptions_destroy`                |  ✓ |    |    |
-|`rocksdb_readoptions_set_verify_checksums`   |  ✓ |  ✓ |    |
-|`rocksdb_readoptions_set_fill_cache`         |  ✓ |    |    |
+|`rocksdb_readoptions_create`                 |    |    |    |
+|`rocksdb_readoptions_destroy`                |    |    |    |
+|`rocksdb_readoptions_set_verify_checksums`   |    |  ✓ |    |
+|`rocksdb_readoptions_set_fill_cache`         |    |    |    |
 |`rocksdb_readoptions_set_snapshot`           |    |    |    |
 |`rocksdb_readoptions_set_iterate_upper_bound`|    |    |    |
-|`rocksdb_readoptions_set_read_tier`          |  ✓ |    |    |
-|`rocksdb_readoptions_set_tailing`            |  ✓ |    |    |
+|`rocksdb_readoptions_set_read_tier`          |    |    |    |
+|`rocksdb_readoptions_set_tailing`            |    |    |    |
 
-### Write options (4 / 4)
+### Write options (0 / 4)
 
 |Command                           |impl|test|note|
 |----------------------------------|:--:|:--:|----|
-|`rocksdb_writeoptions_create`     |  ✓ |    |    |
-|`rocksdb_writeoptions_destroy`    |  ✓ |    |    |
-|`rocksdb_writeoptions_set_sync`   |  ✓ |  ✓ |    |
-|`rocksdb_writeoptions_disable_wal`|  ✓ |  ✓ |    |
+|`rocksdb_writeoptions_create`     |    |    |    |
+|`rocksdb_writeoptions_destroy`    |    |    |    |
+|`rocksdb_writeoptions_set_sync`   |    |  ✓ |    |
+|`rocksdb_writeoptions_disable_wal`|    |  ✓ |    |
 
 ### Compaction (0 / 38)
 
